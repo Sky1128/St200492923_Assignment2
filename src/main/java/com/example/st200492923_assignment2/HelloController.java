@@ -28,6 +28,7 @@ public class HelloController implements Initializable {
     private Scene scene;
     private int currentIndex;
     static final int defaultIndex = 0;
+    private ArrayList<Heroes> heroList = new ArrayList<>();
 
 
     @FXML // ResourceBundle that was given to the FXMLLoader
@@ -106,7 +107,7 @@ public class HelloController implements Initializable {
 
     }
 
-    ArrayList<Heroes> heroList = new ArrayList<>();
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -142,13 +143,14 @@ public class HelloController implements Initializable {
         for (int i = 0; i < heroList.get(0).getAbilities().length; i++) {
             listView.getItems().add(heroList.get(0).getAbilities()[i]);
 
+
         }
 
     }
 
-    public void addNewHero(Heroes newHero)
+    public void addNewHero(Heroes addHero)
     {
-        heroList.add(newHero);
+        heroList.add(addHero);
     }
 
     @FXML

@@ -20,8 +20,9 @@ public class Heroes {
         setAttackDamage(attackDamage);
         setArmor(armor);
         setAbilities(abilities);
-        heroImage = img;
+        setHeroImage(img);
     }
+    public Heroes(){}
 
     public String getHeroName() {
         return heroName;

@@ -29,7 +29,14 @@ public class AddHeroController implements Initializable {
     private Scene scene;
     private Image firstImage;
     public HelloController addHero = new HelloController();
-    public Heroes newHero;
+    public Heroes newHero = new Heroes();
+    private String hero_Name;
+    private String hero_Type;
+    private String hero_Role;
+    private double attack_Damage;
+    private double armor;
+    private String[] ability;
+    private Image hero_Image;
 
 
     @FXML // ResourceBundle that was given to the FXMLLoader
@@ -91,15 +98,16 @@ public class AddHeroController implements Initializable {
 
         String[] abilities = abilityTextArea.getText().split("\n");
 
-        newHero = new Heroes(heroNameTxt.getText(),heroTypeInput.getText(),heroRoleInput.getText(),
-                Double.parseDouble(damageInput.getText()),Double.parseDouble(armourInput.getText()),abilities,firstImage);
+        newHero = new Heroes(heroNameTxt.getText(),heroTypeInput.getText(), heroRoleInput.getText(),Double.parseDouble(damageInput.getText()), Double.parseDouble(armourInput.getText()),abilities,firstImage);
         addHero.addNewHero(newHero);
+
     }
 
 
     @FXML
     void clickToGoHome(ActionEvent event) throws IOException {
 
+        addHero.addNewHero(newHero);
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hero-view.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader.load());
@@ -117,7 +125,6 @@ public class AddHeroController implements Initializable {
         {
             firstImage = new Image(getClass().getResource("/Images/" +file.getName()).toExternalForm());
             imgView.setImage(firstImage);
-
         }
 
     }
