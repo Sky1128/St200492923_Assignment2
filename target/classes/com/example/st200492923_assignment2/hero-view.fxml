@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="785.0" prefWidth="1143.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.st200492923_assignment2.HelloController">
+   <children>
+      <ImageView fx:id="imgView" fitHeight="396.0" fitWidth="486.0" layoutX="454.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="heroName" alignment="CENTER" contentDisplay="CENTER" layoutX="212.0" layoutY="103.0" prefHeight="44.0" prefWidth="692.0" text="Name of the Hero">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="Title" alignment="CENTER" layoutX="118.0" layoutY="14.0" prefHeight="58.0" prefWidth="890.0" text="Deffense Of the Ancientes ">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="heroType" alignment="CENTER" layoutX="52.0" layoutY="218.0" prefHeight="34.0" prefWidth="102.0" text="Hero Type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="heroRole" alignment="CENTER" layoutX="40.0" layoutY="278.0" prefHeight="34.0" prefWidth="121.0" text="Hero Role">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="attackDamage" alignment="CENTER" layoutX="57.0" layoutY="339.0" prefHeight="34.0" prefWidth="128.0" text="Attack Damage">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="armour" alignment="CENTER" layoutX="43.0" layoutY="399.0" prefHeight="34.0" prefWidth="102.0" text="Armour">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="typeLabel" alignment="CENTER" layoutX="258.0" layoutY="218.0" prefHeight="34.0" prefWidth="136.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="roleLabel" alignment="CENTER" layoutX="257.0" layoutY="278.0" prefHeight="34.0" prefWidth="136.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="damageLabel" alignment="CENTER" layoutX="260.0" layoutY="335.0" prefHeight="34.0" prefWidth="128.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="armourLabel" alignment="CENTER" layoutX="260.0" layoutY="393.0" prefHeight="34.0" prefWidth="128.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="abilities" alignment="CENTER" layoutX="113.0" layoutY="450.0" prefHeight="17.0" prefWidth="198.0" text="Abilities">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="editButton" layoutX="254.0" layoutY="719.0" mnemonicParsing="false" onAction="#editOnClick" prefHeight="26.0" prefWidth="81.0" text="Edit Data" />
+      <Button fx:id="addHeroButton" layoutX="570.0" layoutY="720.0" mnemonicParsing="false" onAction="#addHeroOnClick" prefHeight="26.0" prefWidth="75.0" text="Add Hero" />
+      <Button fx:id="nextHeroButton" layoutX="891.0" layoutY="721.0" mnemonicParsing="false" onAction="#nextHeroOnClick" prefHeight="26.0" prefWidth="75.0" text="Next Hero" />
+      <ListView fx:id="listView" layoutX="123.0" layoutY="473.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

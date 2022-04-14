@@ -9,10 +9,10 @@ public class Heroes {
     private String heroRole;
     private double attackDamage;
     private double armor;
-    private String abilities;
+    private String[] abilities;
     private Image heroImage;
 
-    public Heroes(String heroName, String heroType, String heroRole, double attackDamage, double armor, String abilities)
+    public Heroes(String heroName, String heroType, String heroRole, double attackDamage, double armor, String[] abilities, Image img)
     {
         setHeroName(heroName);
         setHeroType(heroType);
@@ -20,6 +20,7 @@ public class Heroes {
         setAttackDamage(attackDamage);
         setArmor(armor);
         setAbilities(abilities);
+        heroImage = img;
     }
 
     public String getHeroName() {
@@ -62,12 +63,20 @@ public class Heroes {
         this.armor = armor;
     }
 
-    public String getAbilities() {
+    public String[] getAbilities() {
         return abilities;
     }
 
-    public void setAbilities(String abilities) {
+    public void setAbilities(String[] abilities) {
         this.abilities = abilities;
+    }
+
+    public Image getHeroImage() {
+        return heroImage;
+    }
+
+    public void setHeroImage(Image heroImage) {
+        this.heroImage = heroImage;
     }
 
 

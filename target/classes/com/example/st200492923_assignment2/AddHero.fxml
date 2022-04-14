@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="696.0" prefWidth="999.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.st200492923_assignment2.AddHeroController">
+    <children>
+        <Label fx:id="Title" alignment="CENTER" layoutX="144.0" layoutY="14.0" prefHeight="45.0" prefWidth="706.0" text="Deffense Of The Ancients">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <Label fx:id="heroType" alignment="CENTER" layoutX="97.0" layoutY="202.0" prefHeight="37.0" prefWidth="91.0" text="Hero Type  :">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="heroRole" alignment="CENTER" layoutX="92.0" layoutY="262.0" prefHeight="37.0" prefWidth="91.0" text="Hero Role :">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="attackDamage" alignment="CENTER" layoutX="90.0" layoutY="329.0" prefHeight="37.0" prefWidth="135.0" text="Attack Damage :">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="armour" alignment="CENTER" layoutX="86.0" layoutY="396.0" prefHeight="37.0" prefWidth="91.0" text="Armour :">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="heroTypeInput" layoutX="258.0" layoutY="208.0" />
+        <TextField fx:id="heroRoleInput" layoutX="258.0" layoutY="268.0" />
+        <TextField fx:id="damageInput" layoutX="258.0" layoutY="335.0" />
+        <TextField fx:id="armourInput" layoutX="258.0" layoutY="402.0" />
+        <Button fx:id="browseFileButton" layoutX="634.0" layoutY="428.0" mnemonicParsing="false" onAction="#loadImgOnClick" prefHeight="62.0" prefWidth="184.0" text="Browse File ">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <ImageView fx:id="imgView" fitHeight="248.0" fitWidth="291.0" layoutX="576.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true" />
+        <TextArea fx:id="abilityTextArea" layoutX="258.0" layoutY="473.0" prefHeight="200.0" prefWidth="200.0" />
+        <Label fx:id="abilityLabel" layoutX="98.0" layoutY="546.0" prefHeight="45.0" prefWidth="91.0" text="Abilities : ">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="addheroBtn" layoutX="547.0" layoutY="591.0" mnemonicParsing="false" onAction="#addHeroOnClick" prefHeight="45.0" prefWidth="135.0" text="Add Hero">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="homePageButton" layoutX="805.0" layoutY="592.0" mnemonicParsing="false" onAction="#clickToGoHome" prefHeight="45.0" prefWidth="123.0" text="Home Page">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+      <TextField fx:id="heroNameTxt" alignment="CENTER" layoutX="310.0" layoutY="79.0" prefHeight="51.0" prefWidth="376.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>
